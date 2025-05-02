@@ -30,7 +30,6 @@ public class ProcessSimulator {
             while ((line = br.readLine()) != null) {
                 String[] parts = line.trim().split("\\s+");
                 int pid = Integer.parseInt(parts[0]);
-                int arrivalTime = Integer.parseInt(parts[1]);
                 int burstTime = Integer.parseInt(parts[2]);
 
                 ProcessThread pt = new ProcessThread(pid, burstTime);
